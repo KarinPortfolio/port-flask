@@ -1,0 +1,57 @@
+form {
+  width: 100%;
+  max-width: 50rem;
+}
+
+label,
+input,
+textarea,
+button {
+  display: block;
+}
+
+input,
+textarea,
+button {
+  width: 100%;
+  font: inherit;
+  padding: 0.7rem;
+}
+
+input,
+textarea {
+  margin-bottom: 0.7rem;
+  color: #FFF;
+  background: #ffffff45;
+  border: 0.1rem solid transparent;
+  border-radius: 1.23rem;
+  transition: border-color 0.3s;
+  box-shadow: 0.3s;
+}
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+  outline: none;
+  border-color: rgb(100, 106, 190);
+  box-shadow: 0 0 0 0.3125rem rgb(64, 41, 101);
+}
+
+label {
+  margin-bottom: 0.2rem;
+  color: rgb(187, 183, 193);
+}
+
+textarea {
+  min-height: 12.5rem;
+  resize: vertical;
+}
+
+
+button {
+  border: none;
+  border-radius: 90px;
+  cursor: pointer;
+  transition: 0.3s;
+}

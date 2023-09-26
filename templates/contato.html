@@ -1,0 +1,19 @@
+{% extends 'base.html'%}
+
+{% block conteudo %}
+<h2><i class="fa-regular fa-envelope"></i>
+  Contato</h2>
+<div class="contato">
+     <form action="https://formsubmit.co/karin.abe@gmail.com" method="POST">
+    <input type="hidden" name="_next" value="http://KarinPortfolio.github.io">
+    <input type="hidden" name="_autoresponse" value="Recebi sua mensagem! Obrigada pelo contato, logo responderei.">
+    <input type="text" name="name" placeholder="Nome" />
+    <input type="text" name="subject" placeholder="Assunto" />
+    <input type="text" name="email" placeholder="E-mail" />
+    <textarea name="message" placeholder="Mensagem"></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</div>
+
+
+{% endblock %}

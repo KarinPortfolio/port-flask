@@ -1,0 +1,64 @@
+.slider {
+  margin: 5 auto -2;
+  width: 600px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.slides {
+  width: 400%;
+  height: 350px;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 25%;
+  position: relative;
+}
+
+.slide img {
+  width: 500px;
+}
+
+.manual-navigation {
+  position: absolute;
+  width: 500px;
+  margin-top: -60px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #FFF;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:Last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background-color: #FFF;
+}
+
+#radio1:checked~.first {
+  margin-left: 0;
+}
+
+#radio2:checked~.first {
+  margin-left: -25%;
+}
+
+#radio3:checked~.first {
+  margin-left: -50%;
+}
+
+
+@media all and (max-width: 700px) {}

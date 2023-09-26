@@ -1,0 +1,26 @@
+{% extends 'base.html'%}
+
+{% block conteudo %}
+<section class="caixa">
+  <img src="{{ url_for('static', filename='img/ods.png') }}">
+  <button id="open-modal">Abrir Detalhes</button>
+  <div id="fade" class="hide"></div>
+  <div id="modal" class="hide">
+    <div class="modal-header">
+      <h2>ODS</h2>
+      <button id="close-modal">Fechar</button>
+    </div>
+    <div class="modal-body">
+      <p>
+        Projeto fictício de ODS, usando HTML e CSS.
+      </p>
+      <p>
+        <a href="https://karinportfolio.github.io/ods10/desafio3/index.html" target="_blank">Site</a>
+        <a href="https://github.com/KarinPortfolio/ods10/tree/main/desafio3" target="_blank">Repositório</a>
+      </p>
+    </div>
+  </div>
+
+</section>
+</main>
+{% endblock %}
